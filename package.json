@@ -1,0 +1,19 @@
+{
+  "name": "dietjoy_3_14022022",
+  "version": "1.0.0",
+  "description": "P3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DietJoy/DietJoy_3_14022022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DietJoy/DietJoy_3_14022022/issues"
+  },
+  "homepage": "https://github.com/DietJoy/DietJoy_3_14022022#readme"
+}

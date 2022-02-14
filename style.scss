@@ -1,0 +1,123 @@
+
+$policeTitre: 'Shrikhand', cursive;
+$policeTexte: 'Roboto', sans-serif;
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiaire: #99E2D0;
+
+/*Header*/
+.conteneurHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .conteneurLogo {
+        display: flex;
+        justify-content: center;
+    }
+}
+.logo {
+    width: 140px;
+    height: 30px;
+}
+
+/*Localisation*/
+$padding-tb:10px;
+$padding-tbp:30px;
+$padding-lr:20%;
+
+
+.conteneurLocalisation {
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    margin-top: 10px;
+    
+    .conteneurMap {
+        box-shadow: 0px 5px 0px inset;
+    }
+    
+    .Presentation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btnExplorer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: $padding-tbp;
+        padding-top: $padding-tb;
+    }
+}
+
+.mapIcone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    padding-top: $padding-tb;
+    padding-bottom: $padding-tb;
+    background-color: darken(#f6f6f6, 10%);
+
+    i.fas.map {
+        padding-left: 10%;
+    }
+}
+  
+.lieu {
+    background-color: darken(#f6f6f6, 10%);
+    border: none;
+    font-weight: bold;
+    font-family: $policeTexte;
+    color: black;
+}
+
+.reservez {
+    font-family: $policeTexte;
+    font-weight: bolder;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    padding-top: $padding-tbp;
+    padding-bottom: $padding-tb;
+    padding-left: $padding-lr;
+    padding-right: $padding-lr;
+    text-align: center;
+}
+
+.decouvrez {
+    font-family: $policeTexte;
+    display: flex;
+    justify-content: center;
+    padding-bottom: $padding-tbp ;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+      
+.explorer {
+    border: solid 1px $primary;
+    box-shadow: 3px 3px 3px rgb(226, 216, 216) ;
+    background-color: $primary;
+    background-clip: padding-box;
+    width: 215px;
+    height: 20px;
+    text-align: center;
+    font-family: $policeTexte;
+    color: white;
+    padding-top: $padding-tb;
+    padding-bottom: $padding-tb;
+    border-radius: 30px;
+    margin-bottom: 7%; 
+    .linear-gradient {
+    background: linear-gradient(0deg,#9356DC, #FF79DA );
+    width: 215px;
+    height: 20px;
+    border-radius: 30px;
+    padding-top: $padding-tb;
+    padding-bottom: $padding-tb;
+}
+
+}
+

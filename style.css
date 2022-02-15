@@ -214,7 +214,7 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 250px;
+  height: 260px;
   border: 1px solid;
   padding-bottom: 10px;
 }
@@ -222,16 +222,15 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 80%;
-  height: 240px;
+  width: 90%;
+  height: 250px;
   border-radius: 20px;
   border: 1px solid blue;
   box-shadow: 2px 3px 4px red;
 }
 .conteneurRestaurants .conteneurLaPalette .cardRestaurant .photoR {
   width: 100%;
-  height: 190px;
+  height: 175px;
   border-radius: 20px 20px 0px 0px;
 }
 .conteneurRestaurants .conteneurLaNote {
@@ -240,7 +239,7 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 250px;
+  height: 260px;
   border: 1px solid;
   padding-bottom: 10px;
 }
@@ -248,12 +247,16 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 80%;
-  height: 240px;
+  width: 90%;
+  height: 250px;
   border-radius: 20px;
   border: 1px solid blue;
   box-shadow: 2px 3px 4px red;
+}
+.conteneurRestaurants .conteneurLaNote .cardRestaurant .photoR {
+  width: 100%;
+  height: 175px;
+  border-radius: 20px 20px 0px 0px;
 }
 .conteneurRestaurants .conteneurLaFrancaise {
   display: flex;
@@ -261,7 +264,7 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 250px;
+  height: 260px;
   border: 1px solid;
   padding-bottom: 10px;
 }
@@ -269,12 +272,16 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 80%;
-  height: 240px;
+  width: 90%;
+  height: 250px;
   border-radius: 20px;
   border: 1px solid blue;
   box-shadow: 2px 3px 4px red;
+}
+.conteneurRestaurants .conteneurLaFrancaise .cardRestaurant .photoR {
+  width: 100%;
+  height: 175px;
+  border-radius: 20px 20px 0px 0px;
 }
 .conteneurRestaurants .conteneurLeDelice {
   display: flex;
@@ -282,7 +289,7 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 250px;
+  height: 260px;
   border: 1px solid;
   padding-bottom: 10px;
 }
@@ -290,12 +297,74 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 80%;
-  height: 240px;
+  width: 90%;
+  height: 250px;
   border-radius: 20px;
   border: 1px solid blue;
   box-shadow: 2px 3px 4px red;
+}
+.conteneurRestaurants .conteneurLeDelice .cardRestaurant .photoR {
+  width: 100%;
+  height: 175px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/*Footer*/
+.conteneurFooter {
+  display: flex;
+  flex-direction: column;
+  background-color: #383636;
+  padding-top: 10px;
+  width: 100%;
+  height: 200px;
+  padding-left: 10%;
+}
+.conteneurFooter .conteneurTitreFooter {
+  display: flex;
+  flex-direction: row;
+  font-family: "Shrikhand", cursive;
+  font-size: larger;
+  color: white;
+}
+.conteneurFooter .proposer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid white;
+  width: 100%;
+  height: 25px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.conteneurFooter .devenir {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid white;
+  width: 100%;
+  height: 25px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.conteneurFooter .mentions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid white;
+  width: 100%;
+  height: 25px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.conteneurFooter .contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid white;
+  width: 100%;
+  height: 25px;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -200,7 +200,7 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 250px;
+    height: 260px;
     border: 1px solid;
     padding-bottom: $padding-tb;
  }
@@ -209,12 +209,17 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 80%;
-    height: 240px;
+    width: 90%;
+    height: 250px;
     border-radius: 20px;
     border: 1px solid blue;
     box-shadow: 2px 3px 4px red ;
+}
+
+@mixin photoRestaurant {
+    width: 100%;
+             height: 175px;
+             border-radius: 20px 20px 0px 0px;             
 }
 
 .conteneurRestaurants {
@@ -233,9 +238,7 @@ h1 {
      .cardRestaurant {
          @include cardR;
          .photoR {
-             width: 100%;
-             height: 190px;
-             border-radius: 20px 20px 0px 0px;
+           @include photoRestaurant;
          }
 }
 } 
@@ -244,32 +247,84 @@ h1 {
         @include conteneurR;
         .cardRestaurant {
             @include cardR;
+            .photoR {
+                @include photoRestaurant;
+            }
    }
-    
     }
 
     .conteneurLaFrancaise {
         @include conteneurR;
         .cardRestaurant {
             @include cardR;
+            .photoR {
+         @include photoRestaurant;
+            }
    }
-    
     }
 
     .conteneurLeDelice {
         @include conteneurR;
         .cardRestaurant {
             @include cardR;
+            .photoR {
+             @include photoRestaurant;
+            }
    }
-    
-    
     }
-
-
-
-
-
 
 }
 
+/*Footer*/
 
+@mixin conteneurFoot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid white;
+    width: 100%;
+    height: 25px;
+    font-family: $policeTexte;
+    color: white;  
+}  
+
+
+.conteneurFooter {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(56, 54, 54);
+    padding-top: $padding-tb;
+    width: 100%;
+    height: 200px;
+    padding-left: 10%;
+  
+
+    .conteneurTitreFooter {
+        display: flex;
+        flex-direction: row;
+        font-family: $policeTitre;
+        font-size: larger;
+        color: white;   
+    }
+
+    .proposer {
+        @include conteneurFoot;
+      
+    }
+
+    .devenir {
+        @include conteneurFoot;
+
+    }
+    
+    .mentions {
+        @include conteneurFoot;
+
+    }
+
+    .contact {
+        @include conteneurFoot;
+
+    }
+
+ }

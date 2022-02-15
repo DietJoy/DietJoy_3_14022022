@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DietJoy/DietJoy_3_14022022/issues"
   },
-  "homepage": "https://github.com/DietJoy/DietJoy_3_14022022#readme"
+  "homepage": "https://github.com/DietJoy/DietJoy_3_14022022#readme",
+  "dependencies": {
+    "sass": "^1.49.7"
+  }
 }

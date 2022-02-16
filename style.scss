@@ -1,330 +1,365 @@
-
-$policeTitre: 'Shrikhand', cursive;
-$policeTexte: 'Roboto', sans-serif;
-$primary: #9356DC;
-$secondary: #FF79DA;
-$tertiaire: #99E2D0;
+$policeTitre: "Shrikhand", cursive;
+$policeTexte: "Roboto", sans-serif;
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiaire: #99e2d0;
 
 /*Header*/
 .conteneurHeader {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-    .conteneurLogo {
-        display: flex;
-        justify-content: center;
-    }
+  .conteneurLogo {
+    display: flex;
+    justify-content: center;
+  }
 }
 .logo {
-    width: 140px;
-    height: 30px;
+  width: 140px;
+  height: 30px;
 }
 
 /*Localisation*/
-$padding-tb:10px;
-$padding-tbp:30px;
-$padding-lr:20%;
+$padding-tb: 10px;
+$padding-tbp: 30px;
+$padding-lr: 20%;
 $fondgris: #f6f6f6;
 
-
 .conteneurLocalisation {
+  display: flex;
+  flex-direction: column;
+  background-color: $fondgris;
+  margin-top: 10px;
+
+  .conteneurMap {
+    box-shadow: 0px 5px 0px inset;
+  }
+
+  .Presentation {
     display: flex;
     flex-direction: column;
-    background-color: $fondgris;
-    margin-top: 10px;
-    
-    .conteneurMap {
-        box-shadow: 0px 5px 0px inset;
-    }
-    
-    .Presentation {
-        display: flex;
-        flex-direction: column;
-    }
+  }
 
-    .btnExplorer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: $padding-tbp;
-        padding-top: $padding-tb;
-    }
+  .btnExplorer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: $padding-tbp;
+    padding-top: $padding-tb;
+  }
 }
 
 .mapIcone {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;    
-    padding-top: $padding-tb;
-    padding-bottom: $padding-tb;
-    background-color: darken($fondgris, 10%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: $padding-tb;
+  padding-bottom: $padding-tb;
+  background-color: darken($fondgris, 10%);
 
-    i.fas.map {
-        padding-left: 10%;
-    }
+  i.fas.map {
+    padding-left: 10%;
+  }
 }
-  
+
 .lieu {
-    background-color: darken($fondgris, 10%);
-    border: none;
-    font-weight: bold;
-    font-family: $policeTexte;
-    color: black;
+  background-color: darken($fondgris, 10%);
+  border: none;
+  font-weight: bold;
+  font-family: $policeTexte;
+  color: black;
 }
 
 .reservez {
-    font-family: $policeTexte;
-    font-weight: bolder;
-    font-size: 22px;
-    display: flex;
-    justify-content: center;
-    padding-top: $padding-tbp;
-    padding-bottom: $padding-tb;
-    padding-left: $padding-lr;
-    padding-right: $padding-lr;
-    text-align: center;
+  font-family: $policeTexte;
+  font-weight: bolder;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  padding-top: $padding-tbp;
+  padding-bottom: $padding-tb;
+  padding-left: $padding-lr;
+  padding-right: $padding-lr;
+  text-align: center;
 }
 
 .decouvrez {
-    font-family: $policeTexte;
-    display: flex;
-    justify-content: center;
-    padding-bottom: $padding-tbp ;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
-}
-      
-.explorer {
-    border: solid 1px $primary;
-    box-shadow: 3px 3px 3px rgb(226, 216, 216) ;
-    background-color: $primary;
-    background-clip: padding-box;
-    width: 215px;
-    height: 20px;
-    text-align: center;
-    font-family: $policeTexte;
-    color: white;
-    padding-top: $padding-tb;
-    padding-bottom: $padding-tb;
-    border-radius: 30px;
-    margin-bottom: 7%; 
-   
-    .linear-gradient {
-    background: linear-gradient(0deg,#9356DC, #FF79DA ); 
+  font-family: $policeTexte;
+  display: flex;
+  justify-content: center;
+  padding-bottom: $padding-tbp;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
 }
 
+.explorer {
+  border: solid 1px $primary;
+  box-shadow: 3px 3px 3px rgb(226, 216, 216);
+  background-color: $primary;
+  background-clip: padding-box;
+  width: 215px;
+  height: 20px;
+  text-align: center;
+  font-family: $policeTexte;
+  color: white;
+  padding-top: $padding-tb;
+  padding-bottom: $padding-tb;
+  border-radius: 30px;
+  margin-bottom: 7%;
+
+  .linear-gradient {
+    background: linear-gradient(0deg, #9356dc, #ff79da);
+  }
 }
 
 /* Fonctionnement*/
- 
+
 @mixin conteneurF {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    border: 1px solid;
-    width: 100%;
-    height: 100px;    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  width: 100%;
+  height: 100px;
 }
 
 @mixin btnF {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; 
-    font-family: $policeTexte;
-    font-weight: bolder;
-    font-size: 16px;
-    width: 80%;
-    height: 60px;
-    border: 1px ;
-    border-radius: 20px;
-    background-color: $fondgris;
-    box-shadow: 2px 2px 2px darken($fondgris, 10%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: $policeTexte;
+  font-weight: bolder;
+  font-size: 16px;
+  width: 80%;
+  height: 60px;
+  border: 1px;
+  border-radius: 20px;
+  background-color: $fondgris;
+  box-shadow: 2px 2px 2px darken($fondgris, 10%);
 }
 
 @mixin conteneurTitre {
-    display: flex;
-    flex-direction: row;
-    background-color: red;
-    padding-left: 10%;  
+  display: flex;
+  flex-direction: row;
+  background-color: red;
+  padding-left: 10%;
 }
 
 h1 {
-    font-size: 22px;
-    font-family: $policeTexte;
-    font-weight: bolder;
+  font-size: 22px;
+  font-family: $policeTexte;
+  font-weight: bolder;
+}
+
+.iconeBtn {
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+.iconeBtn2 {
+  display: flex;
+  flex-direction: row;
+  padding-right: 19px;
+  padding-left: 28px;
 }
 
 .conteneurFonctionnement {
-    display: flex;
-    flex-direction: column;
-    background-color: yellow;
-    width: 100%;
-    height: 300px;
-    padding-bottom: $padding-tbp;
+  display: flex;
+  flex-direction: column;
 
-    .conteneurTitre {
-      @include conteneurTitre;
-    }
+  width: 100%;
+  height: 300px;
+  padding-bottom: $padding-tbp;
 
-    .conteneurChoisissez {
-        @include conteneurF;
-        .btnFonctionnement {
-            @include btnF;
-        }
-    }
-    .conteneurComposez {
-        @include conteneurF;
-        .btnFonctionnement {
-            @include btnF;
-        } 
-    }
-    .conteneurDegustez {
-        @include conteneurF;
-        .btnFonctionnement {
-            @include btnF;
-        } 
-    }
+  .conteneurTitre {
+    @include conteneurTitre;
+  }
 
+  .conteneurChoisissez {
+    @include conteneurF;
+    .btnFonctionnement {
+      @include btnF;
+    }
+  }
+  .conteneurComposez {
+    @include conteneurF;
+    .btnFonctionnement {
+      @include btnF;
+    }
+  }
+  .conteneurDegustez {
+    @include conteneurF;
+    .btnFonctionnement {
+      @include btnF;
+    }
+  }
 }
 
 /* Restaurants*/
 
 @mixin conteneurR {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 260px;
-    border: 1px solid;
-    padding-bottom: $padding-tb;
- }
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 260px;
+  border: 1px solid;
+  padding-bottom: $padding-tb;
+}
+
 @mixin cardR {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    height: 250px;
-    border-radius: 20px;
-    border: 1px solid blue;
-    box-shadow: 2px 3px 4px red ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 250px;
+  border-radius: 20px;
+  border: 1px solid blue;
+  box-shadow: 2px 3px 4px red;
 }
 
 @mixin photoRestaurant {
-    width: 100%;
-             height: 175px;
-             border-radius: 20px 20px 0px 0px;             
+  width: 100%;
+  height: 175px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+@mixin cardDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: $policeTexte;
+  width: fit-content;
+  height: 70px;
+  line-height: 13px;
+  padding-left: 10px;
+}
+
+h3 {
+  margin: 0%;
 }
 
 .conteneurRestaurants {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 1150px;
-    background-color: $fondgris;
-    padding-top: $padding-tb;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 1150px;
+  background-color: $fondgris;
+  padding-top: $padding-tb;
 
-    .conteneurTitre {
-      @include conteneurTitre;
-    }  
-    .conteneurLaPalette {
-     @include conteneurR;
-     .cardRestaurant {
-         @include cardR;
-         .photoR {
-           @include photoRestaurant;
-         }
-}
-} 
-
-    .conteneurLaNote {
-        @include conteneurR;
-        .cardRestaurant {
-            @include cardR;
-            .photoR {
-                @include photoRestaurant;
-            }
-   }
+  .conteneurTitre {
+    @include conteneurTitre;
+  }
+  .conteneurLaPalette {
+    @include conteneurR;
+    .cardRestaurant {
+      @include cardR;
+      .photoR {
+        @include photoRestaurant;
+      }
+      .cardDescription {
+        @include cardDesc;
+      }
     }
+  }
 
-    .conteneurLaFrancaise {
-        @include conteneurR;
-        .cardRestaurant {
-            @include cardR;
-            .photoR {
-         @include photoRestaurant;
-            }
-   }
+  .conteneurLaNote {
+    @include conteneurR;
+    .cardRestaurant {
+      @include cardR;
+      .photoR {
+        @include photoRestaurant;
+      }
+      .cardDescription {
+        @include cardDesc;
+      }
     }
+  }
 
-    .conteneurLeDelice {
-        @include conteneurR;
-        .cardRestaurant {
-            @include cardR;
-            .photoR {
-             @include photoRestaurant;
-            }
-   }
+  .conteneurLaFrancaise {
+    @include conteneurR;
+    .cardRestaurant {
+      @include cardR;
+      .photoR {
+        @include photoRestaurant;
+      }
+      .cardDescription {
+        @include cardDesc;
+      }
     }
+  }
 
+  .conteneurLeDelice {
+    @include conteneurR;
+    .cardRestaurant {
+      @include cardR;
+      .photoR {
+        @include photoRestaurant;
+      }
+      .cardDescription {
+        @include cardDesc;
+      }
+    }
+  }
 }
 
 /*Footer*/
 
 @mixin conteneurFoot {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 1px solid white;
-    width: 100%;
-    height: 25px;
-    font-family: $policeTexte;
-    color: white;  
-}  
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+  font-family: $policeTexte;
+  color: white;
+}
 
 .conteneurFooter {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(56, 54, 54);
+  padding-top: $padding-tb;
+  width: 100%;
+  height: 200px;
+  padding-left: 10%;
+
+  .conteneurTitreFooter {
     display: flex;
-    flex-direction: column;
-    background-color: rgb(56, 54, 54);
-    padding-top: $padding-tb;
-    width: 100%;
-    height: 200px;
-    padding-left: 10%;
-  
+    flex-direction: row;
+    font-family: $policeTitre;
+    font-size: larger;
+    color: white;
+  }
 
-    .conteneurTitreFooter {
-        display: flex;
-        flex-direction: row;
-        font-family: $policeTitre;
-        font-size: larger;
-        color: white;   
-    }
+  .proposer {
+    @include conteneurFoot;
+  }
 
-    .proposer {
-        @include conteneurFoot;
-      
-    }
+  .devenir {
+    @include conteneurFoot;
+  }
 
-    .devenir {
-        @include conteneurFoot;
+  .mentions {
+    @include conteneurFoot;
+  }
 
-    }
-    
-    .mentions {
-        @include conteneurFoot;
+  .contact {
+    @include conteneurFoot;
+  }
+}
+.iconeF {
+  margin-right: 15px;
+}
 
-    }
-
-    .contact {
-        @include conteneurFoot;
-
-    }
-
- }
+.iconeFo {
+  margin-right: 9px;
+}

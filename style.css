@@ -1,12 +1,25 @@
 /*Header*/
 .conteneurHeader {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  background-color: #9356dc;
 }
+
 .conteneurHeader .conteneurLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -17,34 +30,62 @@
 
 /*Localisation*/
 .conteneurLocalisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #f6f6f6;
   margin-top: 10px;
 }
+
 .conteneurLocalisation .conteneurMap {
+  -webkit-box-shadow: 0px 5px 0px inset;
   box-shadow: 0px 5px 0px inset;
 }
+
 .conteneurLocalisation .Presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
+
 .conteneurLocalisation .btnExplorer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-bottom: 30px;
   padding-top: 10px;
 }
 
 .mapIcone {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #dddddd;
 }
+
 .mapIcone i.fas.map {
   padding-left: 10%;
 }
@@ -61,7 +102,11 @@
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
   font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-top: 30px;
   padding-bottom: 10px;
@@ -72,7 +117,11 @@
 
 .decouvrez {
   font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-bottom: 30px;
   padding-left: 5%;
@@ -81,9 +130,10 @@
 }
 
 .explorer {
-  border: solid 1px #9356DC;
+  border: solid 1px #9356dc;
+  -webkit-box-shadow: 3px 3px 3px #e2d8d8;
   box-shadow: 3px 3px 3px #e2d8d8;
-  background-color: #9356DC;
+  background-color: #9356dc;
   background-clip: padding-box;
   width: 215px;
   height: 20px;
@@ -95,8 +145,16 @@
   border-radius: 30px;
   margin-bottom: 7%;
 }
+
 .explorer .linear-gradient {
-  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#9356dc),
+    to(#ff79da)
+  );
+  background: linear-gradient(0deg, #9356dc, #ff79da);
 }
 
 /* Fonctionnement*/
@@ -106,33 +164,85 @@ h1 {
   font-weight: bolder;
 }
 
-.conteneurFonctionnement {
+.iconeBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+.iconeBtn2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-right: 19px;
+  padding-left: 28px;
+}
+
+.conteneurFonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-color: yellow;
   width: 100%;
   height: 300px;
   padding-bottom: 30px;
 }
+
 .conteneurFonctionnement .conteneurTitre {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   background-color: red;
   padding-left: 10%;
 }
+
 .conteneurFonctionnement .conteneurChoisissez {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border: 1px solid;
   width: 100%;
   height: 100px;
 }
+
 .conteneurFonctionnement .conteneurChoisissez .btnFonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
-  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
@@ -142,21 +252,39 @@ h1 {
   border: 1px;
   border-radius: 20px;
   background-color: #f6f6f6;
+  -webkit-box-shadow: 2px 2px 2px #dddddd;
   box-shadow: 2px 2px 2px #dddddd;
 }
+
 .conteneurFonctionnement .conteneurComposez {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border: 1px solid;
   width: 100%;
   height: 100px;
 }
+
 .conteneurFonctionnement .conteneurComposez .btnFonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
-  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
@@ -166,21 +294,39 @@ h1 {
   border: 1px;
   border-radius: 20px;
   background-color: #f6f6f6;
+  -webkit-box-shadow: 2px 2px 2px #dddddd;
   box-shadow: 2px 2px 2px #dddddd;
 }
+
 .conteneurFonctionnement .conteneurDegustez {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border: 1px solid;
   width: 100%;
   height: 100px;
 }
+
 .conteneurFonctionnement .conteneurDegustez .btnFonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
-  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
@@ -190,128 +336,317 @@ h1 {
   border: 1px;
   border-radius: 20px;
   background-color: #f6f6f6;
+  -webkit-box-shadow: 2px 2px 2px #dddddd;
   box-shadow: 2px 2px 2px #dddddd;
 }
 
 /* Restaurants*/
+h3 {
+  margin: 0%;
+}
+
 .conteneurRestaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
   height: 1150px;
   background-color: #f6f6f6;
   padding-top: 10px;
 }
+
 .conteneurRestaurants .conteneurTitre {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   background-color: red;
   padding-left: 10%;
 }
+
 .conteneurRestaurants .conteneurLaPalette {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   height: 260px;
   border: 1px solid;
   padding-bottom: 10px;
 }
+
 .conteneurRestaurants .conteneurLaPalette .cardRestaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 90%;
   height: 250px;
   border-radius: 20px;
   border: 1px solid blue;
+  -webkit-box-shadow: 2px 3px 4px red;
   box-shadow: 2px 3px 4px red;
 }
+
 .conteneurRestaurants .conteneurLaPalette .cardRestaurant .photoR {
   width: 100%;
   height: 175px;
   border-radius: 20px 20px 0px 0px;
 }
-.conteneurRestaurants .conteneurLaNote {
+
+.conteneurRestaurants .conteneurLaPalette .cardRestaurant .cardDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  font-family: "Roboto", sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 70px;
+  line-height: 13px;
+  padding-left: 10px;
+}
+
+.conteneurRestaurants .conteneurLaNote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   height: 260px;
   border: 1px solid;
   padding-bottom: 10px;
 }
+
 .conteneurRestaurants .conteneurLaNote .cardRestaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 90%;
   height: 250px;
   border-radius: 20px;
   border: 1px solid blue;
+  -webkit-box-shadow: 2px 3px 4px red;
   box-shadow: 2px 3px 4px red;
 }
+
 .conteneurRestaurants .conteneurLaNote .cardRestaurant .photoR {
   width: 100%;
   height: 175px;
   border-radius: 20px 20px 0px 0px;
 }
-.conteneurRestaurants .conteneurLaFrancaise {
+
+.conteneurRestaurants .conteneurLaNote .cardRestaurant .cardDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  font-family: "Roboto", sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 70px;
+  line-height: 13px;
+  padding-left: 10px;
+}
+
+.conteneurRestaurants .conteneurLaFrancaise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   height: 260px;
   border: 1px solid;
   padding-bottom: 10px;
 }
+
 .conteneurRestaurants .conteneurLaFrancaise .cardRestaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 90%;
   height: 250px;
   border-radius: 20px;
   border: 1px solid blue;
+  -webkit-box-shadow: 2px 3px 4px red;
   box-shadow: 2px 3px 4px red;
 }
+
 .conteneurRestaurants .conteneurLaFrancaise .cardRestaurant .photoR {
   width: 100%;
   height: 175px;
   border-radius: 20px 20px 0px 0px;
 }
-.conteneurRestaurants .conteneurLeDelice {
+
+.conteneurRestaurants .conteneurLaFrancaise .cardRestaurant .cardDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  font-family: "Roboto", sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 70px;
+  line-height: 13px;
+  padding-left: 10px;
+}
+
+.conteneurRestaurants .conteneurLeDelice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   height: 260px;
   border: 1px solid;
   padding-bottom: 10px;
 }
+
 .conteneurRestaurants .conteneurLeDelice .cardRestaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 90%;
   height: 250px;
   border-radius: 20px;
   border: 1px solid blue;
+  -webkit-box-shadow: 2px 3px 4px red;
   box-shadow: 2px 3px 4px red;
 }
+
 .conteneurRestaurants .conteneurLeDelice .cardRestaurant .photoR {
   width: 100%;
   height: 175px;
   border-radius: 20px 20px 0px 0px;
 }
 
+.conteneurRestaurants .conteneurLeDelice .cardRestaurant .cardDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  font-family: "Roboto", sans-serif;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 70px;
+  line-height: 13px;
+  padding-left: 10px;
+}
+
 /*Footer*/
 .conteneurFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #383636;
   padding-top: 10px;
@@ -319,52 +654,93 @@ h1 {
   height: 200px;
   padding-left: 10%;
 }
+
 .conteneurFooter .conteneurTitreFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   font-family: "Shrikhand", cursive;
   font-size: larger;
   color: white;
 }
+
 .conteneurFooter .proposer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  border: 1px solid white;
-  width: 100%;
-  height: 25px;
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-.conteneurFooter .devenir {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: 1px solid white;
-  width: 100%;
-  height: 25px;
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-.conteneurFooter .mentions {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: 1px solid white;
-  width: 100%;
-  height: 25px;
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-.conteneurFooter .contact {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: 1px solid white;
   width: 100%;
   height: 25px;
   font-family: "Roboto", sans-serif;
   color: white;
 }
 
+.conteneurFooter .devenir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.conteneurFooter .mentions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.conteneurFooter .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 25px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.iconeF {
+  margin-right: 15px;
+}
+
+.iconeFo {
+  margin-right: 9px;
+}
 /*# sourceMappingURL=style.css.map */

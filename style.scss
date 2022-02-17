@@ -11,7 +11,6 @@ $tertiaire: #99e2d0;
   flex-direction: row;
   justify-content: center;
   
-  
   .conteneurLogo {
     display: flex;
     justify-content: center;
@@ -118,6 +117,7 @@ $fondgris: #f6f6f6;
 background-color: lighten($color: $primary, $amount: 35%);
 box-shadow: 2px 2px 10px darken($fondgris, 20%);
 transition: all 500ms ease-in-out;
+transform: scale(1.03);
 }
 
 @mixin conteneurF {
@@ -295,7 +295,7 @@ cursor: grab;
   .conteneurTitre {
     @include conteneurTitre;
   }
-  .conteneurLaPalette {
+  .conteneurLlal {
     @include conteneurR;
     .cardRestaurant {
       @include cardR;
@@ -308,44 +308,6 @@ cursor: grab;
     }
   }
 
-  .conteneurLaNote {
-    @include conteneurR;
-    .cardRestaurant {
-      @include cardR;
-      .photoR {
-        @include photoRestaurant;
-      }
-      .cardDescription {
-        @include cardDesc;
-      }
-    }
-  }
-
-  .conteneurLaFrancaise {
-    @include conteneurR;
-    .cardRestaurant {
-      @include cardR;
-      .photoR {
-        @include photoRestaurant;
-      }
-      .cardDescription {
-        @include cardDesc;
-      }
-    }
-  }
-
-  .conteneurLeDelice {
-    @include conteneurR;
-    .cardRestaurant {
-      @include cardR;
-      .photoR {
-        @include photoRestaurant;
-      }
-      .cardDescription {
-        @include cardDesc;
-      }
-    }
-  }
 }
 
 .nouveau {

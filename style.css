@@ -174,6 +174,7 @@ h1 {
   background-color: #f2eafb;
   box-shadow: 2px 2px 10px #c3c3c3;
   transition: all 500ms ease-in-out;
+  transform: scale(1.03);
 }
 
 /* Restaurants*/
@@ -224,7 +225,7 @@ h4 {
   flex-direction: row;
   padding-left: 10%;
 }
-.conteneurRestaurants .conteneurLaPalette {
+.conteneurRestaurants .conteneurLlal {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -233,7 +234,7 @@ h4 {
   height: 260px;
   padding-bottom: 10px;
 }
-.conteneurRestaurants .conteneurLaPalette .cardRestaurant {
+.conteneurRestaurants .conteneurLlal .cardRestaurant {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,105 +243,12 @@ h4 {
   border-radius: 20px;
   box-shadow: 2px 3px 4px #bdb8b8;
 }
-.conteneurRestaurants .conteneurLaPalette .cardRestaurant .photoR {
+.conteneurRestaurants .conteneurLlal .cardRestaurant .photoR {
   width: 100%;
   height: 175px;
   border-radius: 20px 20px 0px 0px;
 }
-.conteneurRestaurants .conteneurLaPalette .cardRestaurant .cardDescription {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  height: 70px;
-}
-.conteneurRestaurants .conteneurLaNote {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 260px;
-  padding-bottom: 10px;
-}
-.conteneurRestaurants .conteneurLaNote .cardRestaurant {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  height: 250px;
-  border-radius: 20px;
-  box-shadow: 2px 3px 4px #bdb8b8;
-}
-.conteneurRestaurants .conteneurLaNote .cardRestaurant .photoR {
-  width: 100%;
-  height: 175px;
-  border-radius: 20px 20px 0px 0px;
-}
-.conteneurRestaurants .conteneurLaNote .cardRestaurant .cardDescription {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  height: 70px;
-}
-.conteneurRestaurants .conteneurLaFrancaise {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 260px;
-  padding-bottom: 10px;
-}
-.conteneurRestaurants .conteneurLaFrancaise .cardRestaurant {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  height: 250px;
-  border-radius: 20px;
-  box-shadow: 2px 3px 4px #bdb8b8;
-}
-.conteneurRestaurants .conteneurLaFrancaise .cardRestaurant .photoR {
-  width: 100%;
-  height: 175px;
-  border-radius: 20px 20px 0px 0px;
-}
-.conteneurRestaurants .conteneurLaFrancaise .cardRestaurant .cardDescription {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  height: 70px;
-}
-.conteneurRestaurants .conteneurLeDelice {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 260px;
-  padding-bottom: 10px;
-}
-.conteneurRestaurants .conteneurLeDelice .cardRestaurant {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  height: 250px;
-  border-radius: 20px;
-  box-shadow: 2px 3px 4px #bdb8b8;
-}
-.conteneurRestaurants .conteneurLeDelice .cardRestaurant .photoR {
-  width: 100%;
-  height: 175px;
-  border-radius: 20px 20px 0px 0px;
-}
-.conteneurRestaurants .conteneurLeDelice .cardRestaurant .cardDescription {
+.conteneurRestaurants .conteneurLlal .cardRestaurant .cardDescription {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

@@ -178,7 +178,6 @@ h1 {
   }
 }
 
-
 .rond {
     display: flex;
     justify-content: center;
@@ -202,7 +201,7 @@ h1 {
     @include conteneurTitre;
   }
 
-  .conteneurChoisissez {
+  .conteneurCcd {
     @include conteneurF;
     .btnFonctionnement {
       @include btnF;
@@ -211,25 +210,6 @@ h1 {
     @include hoverbtnF;
     }
   }
-  .conteneurComposez {
-    @include conteneurF;
-    .btnFonctionnement {
-      @include btnF;
-    }
-    :hover {
-      @include hoverbtnF;
-      }
-  }
-  .conteneurDegustez {
-    @include conteneurF;
-    .btnFonctionnement {
-      @include btnF;
-    }
-    :hover {
-      @include hoverbtnF;
-      }
-  }
-
 
 }
 
@@ -290,7 +270,8 @@ font-family: $policeTexte;
 }
 
 .heart:hover{
-animation: heart 900ms ease-in-out 0ms 1 normal both;
+/*animation: heart 900ms ease-in-out 0ms 1 normal both*/
+transition: all ease-in-out 900ms;
 background: linear-gradient(to bottom right, $secondary, $primary);
 background-clip: text;
 -webkit-background-clip: text;
@@ -363,6 +344,37 @@ cursor: grab;
       .cardDescription {
         @include cardDesc;
       }
+    }
+  }
+}
+
+.nouveau {
+  font-family: $policeTexte;
+  position: absolute;
+  right: 10%;
+  margin-top: 3%;
+  background: #a4ebd9;
+  color: #269176;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 2px;
+  animation: nouveau 2600ms linear infinite;
+  @keyframes nouveau {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity:0,5;
+    }
+    50% {
+      opacity:0;
+    }
+    75% {
+      opacity:0,7;
+    }
+    100% {
+      opacity: 1;
     }
   }
 }

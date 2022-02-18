@@ -374,19 +374,7 @@ a{
     color: white;
   }
 
-  .proposer {
-    @include conteneurFoot;
-  }
-
-  .devenir {
-    @include conteneurFoot;
-  }
-
-  .mentions {
-    @include conteneurFoot;
-  }
-
-  .contact {
+  .pdmc {
     @include conteneurFoot;
   }
 }

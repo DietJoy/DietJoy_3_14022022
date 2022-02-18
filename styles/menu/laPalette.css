@@ -1,4 +1,183 @@
-h1 {
-    color: blue;
-    background-color: yellow;
+/*Header*/
+.conteneurHeader {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
+.conteneurHeader .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+  position: absolute;
+  margin-right: 75%;
+}
+
+.conteneurHeader .conteneurLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  width: 140px;
+  height: 30px;
+}
+
+a {
+  color: inherit;
+}
+
+/*Menu*/
+.conteneurPhotoMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 200px;
+  padding-top: 10px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: yellow;
+  width: 100%;
+  height: 600px;
+}
+
+.titreMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 30px;
+  font-family: "Shrikhand", cursive;
+  font-size: x-large;
+  padding-left: 5%;
+  padding-top: 30px;
+  background-color: #f6f6f6;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.titreMenu .heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 21px;
+  padding-right: 10%;
+}
+
+.titreMenu .heart:hover {
+  /*animation: heart 900ms ease-in-out 0ms 1 normal both;*/
+  -webkit-transition: all ease-in-out 900ms;
+  transition: all ease-in-out 900ms;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+h5 {
+  font-size: large;
+  margin: 0%;
+  padding: 0%;
+}
+
+.epd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #9356dc;
+  padding-left: 5%;
+}
+
+.epd .titreEpd {
+  font-size: large;
+  font-family: "Roboto", sans-serif;
+  margin-top: 30px;
+}
+
+.epd .choix1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto", sans-serif;
+  line-height: 13px;
+  background-color: white;
+  width: 92%;
+  height: 70px;
+  border-radius: 15px;
+  margin-top: 30px;
+  padding-left: 5%;
+}
+
+.epd .choix1 .prix {
+  font-weight: bold;
+}
+/*# sourceMappingURL=laPalette.css.map */

@@ -15,7 +15,7 @@ $fondgris: #f6f6f6;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+ 
     .arrow{
       display: flex;
       flex-direction: row;
@@ -79,6 +79,11 @@ $fondgris: #f6f6f6;
     align-items: center;
     font-size: 21px;
     padding-right: 10%;
+  }
+
+  .fa-regular.fa-heart:hover{
+    font-weight: 900;
+    cursor: grab;
   }
   
   .heart:hover{
@@ -158,12 +163,15 @@ $fondgris: #f6f6f6;
               justify-content: center;
               align-items: center;
               background-color: $tertiaire;
+              margin-right: 0px;
               width: 50px;
               height: 50px;
               border-radius: 0 15px 15px 0;
               padding: 10px;
-              
+              position: absolute;
+              right: 0px;
               & :hover {
+              display: flex;
               margin-right: 70px; 
               transition: all 500ms ease-in-out;
             }

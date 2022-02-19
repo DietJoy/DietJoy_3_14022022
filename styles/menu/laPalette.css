@@ -118,6 +118,12 @@ a {
   padding-right: 10%;
 }
 
+.titreMenu .fa-regular.fa-heart:hover {
+  font-weight: 900;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
 .titreMenu .heart:hover {
   /*animation: heart 900ms ease-in-out 0ms 1 normal both;*/
   -webkit-transition: all ease-in-out 900ms;
@@ -231,13 +237,19 @@ h5 {
       -ms-flex-align: center;
           align-items: center;
   background-color: #99e2d0;
+  margin-right: 0px;
   width: 50px;
   height: 50px;
   border-radius: 0 15px 15px 0;
   padding: 10px;
+  position: absolute;
+  right: 0px;
 }
 
 .epd .choix .check :hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 70px;
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;

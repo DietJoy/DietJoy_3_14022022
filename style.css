@@ -178,10 +178,6 @@ h1 {
   color: grey;
 }
 
-.iconeBtn2 :hover {
-  color: #9356dc;
-}
-
 .rond {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,6 +271,10 @@ h1 {
           transform: scale(1.03);
 }
 
+.conteneurFonctionnement .conteneurCcd :hover i {
+  color: #9356dc;
+}
+
 /* Restaurants*/
 h4 {
   margin: 0%;
@@ -293,7 +293,9 @@ h4 {
   font-family: "Roboto", sans-serif;
 }
 
+/*Coeur, gestion opacity*/
 .heart {
+  font-size: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,28 +306,36 @@ h4 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 35px;
   position: relative;
   z-index: 1;
 }
 
-.heart:hover::after {
-  opacity: 1;
+.heart_empty {
+  position: absolute;
 }
 
-.heart::after {
-  content: "";
+.heart_full {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  color: transparent;
   opacity: 0;
-  z-index: -1;
-  -webkit-transition: opacity 600ms;
-  transition: opacity 600ms;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.heart_full:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff79da), to(#9356dc));
+  background: linear-gradient(0deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @-webkit-keyframes heart {
@@ -364,78 +374,11 @@ h4 {
   }
 }
 
-.heart2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  font-size: 35px;
-  position: relative;
-  z-index: 1;
-  opacity: 1;
-}
-
-.heart2:hover {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  z-index: -1;
-  -webkit-transition: opacity 600ms;
-  transition: opacity 600ms;
-  -webkit-transform-style: inherit;
-          transform-style: inherit;
-}
-
-@-webkit-keyframes heart2 {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0,7;
-  }
-  50% {
-    opacity: 0,5;
-  }
-  75% {
-    opacity: 0,3;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes heart2 {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0,7;
-  }
-  50% {
-    opacity: 0,5;
-  }
-  75% {
-    opacity: 0,3;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .fa-regular.fa-heart:hover {
-  font-weight: 100;
+  font-weight: 900;
   cursor: -webkit-grab;
   cursor: grab;
+  font-size: 35px;
 }
 
 .conteneurRestaurants {

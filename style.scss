@@ -12,10 +12,9 @@ $tertiaire: #99e2d0;
   background-color: white;
   position: fixed;
   z-index: 2;
-animation: conteneur 2s; 
-animation-delay: 3s;
-animation-fill-mode: both;
-
+  animation: conteneur 2s; 
+  animation-delay: 3s;
+  animation-fill-mode: both;
 }
 
 @keyframes conteneur {
@@ -26,14 +25,12 @@ animation-fill-mode: both;
 }
 
 @-webkit-keyframes conteneur {
-
   100% {
-      -webkit-opacity: 0;
-      -webkit-z-index: -1;
+    -webkit-opacity: 0;
+    -webkit-z-index: -1;
   }
-
+  
 }
-
 
 .chargement {
   border: 10px ridge #9356DC;
@@ -42,77 +39,64 @@ animation-fill-mode: both;
   border-radius: 50%;
   width: 150px;
   height: 150px;
-
+  
   -webkit-animation: spin 2s linear infinite;
   -o-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
-
+  
   margin: auto;
-display: flex;
-justify-content: center;
-align-items: center;
-top: 0%;
-left: 0%;
-bottom: 0%;
-right: 0%;
-
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
 }
 
 @keyframes spin {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
-
 }
 
 @-webkit-keyframes spin {
   0% {
-      -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   100% {
-      -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
   }
-
 }
 
 .drink {
   display: flex;
   font-size: 40px;
   color: #FF79DA  ;
-
-  webkit-animation: spinreverse 2s linear infinite;
+  -webkit-animation: spinreverse 2s linear infinite;
   -o-animation: spinreverse 2s linear infinite;
   animation: spinreverse 2s linear infinite;
-
 }
-  @keyframes spinreverse {
-      0% {
-          transform: rotate(0deg) scale(0);
-      }
-      100% {
-          transform: rotate(-360deg) scale(1);
-      }
-  
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg) scale(0);
   }
-  
-  @-webkit-keyframes spinreverse {
-      0% {
-          -webkit-transform: rotate(0deg) scale(0);
-      }
-      100% {
-          -webkit-transform: rotate(-360deg) scale(1);
-      }
-  
+  100% {
+    transform: rotate(-360deg) scale(1);
   }
-  
+}
 
-
-
+@-webkit-keyframes spinreverse {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg) scale(1);
+  }
+}
 
 /*Header*/
 .conteneurHeader {
@@ -143,7 +127,7 @@ $fondgris: #f6f6f6;
   transition: all 500ms ease-in-out;
   transform: scale(1.03);
   cursor: grab;
-  }
+}
 
 .explorerNR {
   display: inline;
@@ -155,16 +139,16 @@ $fondgris: #f6f6f6;
   flex-direction: column;
   background-color: $fondgris;
   margin-top: 10px;
-
+  
   .conteneurMap {
     box-shadow: 0px 5px 0px inset;
   }
-
+  
   .Presentation {
     display: flex;
     flex-direction: column;
   }
-
+  
   .btnExplorer {
     display: flex;
     justify-content: center;
@@ -174,7 +158,7 @@ $fondgris: #f6f6f6;
     :hover {
       @include hoverBtnEx;
     }
-  
+    
   }
 }
 
@@ -185,7 +169,7 @@ $fondgris: #f6f6f6;
   padding-top: $padding-tb;
   padding-bottom: $padding-tb;
   background-color: darken($fondgris, 5%);
-
+  
   i.fas.map {
     padding-left: 10%;
   }
@@ -235,16 +219,15 @@ $fondgris: #f6f6f6;
   border-radius: 30px;
   box-shadow: 3px 3px 3px rgb(226, 216, 216);
   margin-bottom: 7%;
-  
 }
 
 /* Fonctionnement*/
 
 @mixin hoverbtnF {
-background-color: lighten($color: $primary, $amount: 35%);
-box-shadow: 2px 2px 10px darken($fondgris, 20%);
-transition: all 500ms ease-in-out;
-transform: scale(1.03);
+  background-color: lighten($color: $primary, $amount: 35%);
+  box-shadow: 2px 2px 10px darken($fondgris, 20%);
+  transition: all 500ms ease-in-out;
+  transform: scale(1.03);
 }
 
 @mixin conteneurF {
@@ -269,7 +252,6 @@ transform: scale(1.03);
   border-radius: 20px;
   background-color: $fondgris;
   box-shadow: 2px 2px 10px darken($fondgris, 10%);
-
 }
 
 @mixin conteneurTitre {
@@ -301,16 +283,16 @@ h1 {
 }
 
 .rond {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $primary;
-    color: white;
-    border-radius: 25px;
-    width: 25px;
-    height: 25px;
-    margin: 0 10px 0 -10px;
-  }  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary;
+  color: white;
+  border-radius: 25px;
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 0 -10px;
+}  
 
 .conteneurFonctionnement {
   display: flex;
@@ -318,24 +300,24 @@ h1 {
   width: 100%;
   height: 300px;
   padding-bottom: $padding-tbp;
-
+  
   .conteneurTitre {
     @include conteneurTitre;
   }
-
+  
   .conteneurCcd {
     @include conteneurF;
     .btnFonctionnement {
       @include btnF;
     }
     :hover {
-    @include hoverbtnF;
-    & i{
-      color: $primary;
-    }
+      @include hoverbtnF;
+      & i{
+        color: $primary;
+      }
     }
   }
-
+  
 }
 
 /* Restaurants*/
@@ -381,10 +363,10 @@ h4 {
 }
 
 .conteneurDescription {
-display: flex;
-flex-direction: column;
-line-height: 20px;
-font-family: $policeTexte;
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+  font-family: $policeTexte;
 }
 
 /*Coeur, gestion opacity*/
@@ -418,7 +400,7 @@ font-family: $policeTexte;
   -moz-text-fill-color: transparent;
   opacity: 1;
   transform: scale(1.10);
-
+  
   @keyframes heart {
     0% {
       opacity: 0;
@@ -436,13 +418,13 @@ font-family: $policeTexte;
       opacity: 1;
     }
   }
-
+  
 }
 
 .fa-regular.fa-heart:hover{
   font-weight: 900 ;
   cursor: grab; 
-font-size: 35px;
+  font-size: 35px;
 }
 
 .conteneurRestaurants {
@@ -452,7 +434,7 @@ font-size: 35px;
   height: 1150px;
   background-color: $fondgris;
   padding-top: $padding-tb;
-
+  
   .conteneurTitre {
     @include conteneurTitre;
   }
@@ -468,7 +450,7 @@ font-size: 35px;
       }
     }
   }
-
+  
 }
 
 .nouveau {
@@ -527,7 +509,7 @@ a{
   padding-top: $padding-tb;
   height: 200px;
   padding-left: 10%;
-
+  
   .conteneurTitreFooter {
     display: flex;
     flex-direction: row;
@@ -535,7 +517,7 @@ a{
     font-size: larger;
     color: white;
   }
-
+  
   .pdmc {
     @include conteneurFoot;
   }

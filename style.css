@@ -81,9 +81,8 @@
   display: flex;
   font-size: 40px;
   color: #FF79DA;
-  webkit-animation: spinreverse 2s linear infinite;
   -webkit-animation: spinreverse 2s linear infinite;
-          animation: spinreverse 2s linear infinite;
+  animation: spinreverse 2s linear infinite;
 }
 
 @keyframes spinreverse {

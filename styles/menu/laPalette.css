@@ -219,6 +219,11 @@ h5 {
   }
 }
 
+.epd .choix1:hover .check {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 .epd .choix2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,70 +339,47 @@ h5 {
 
 /* Fermeture epd */
 /*Animation Check*/
-@-webkit-keyframes slideright {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
-  }
-}
-@keyframes slideright {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-            transform-origin: 100% 100%;
-  }
+.check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99e2d0;
+  width: 50px;
+  height: 50px;
+  border-radius: 0 15px 15px 0;
+  padding: 10px;
+  right: 0px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
-/*
 .iconeCheck {
-  background: red;
+  display: inline-block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-size: 23px;
-  
-  .rotate-center {
-    -webkit-animation: rotate-center 1s ease-in-out both;
-    animation: rotate-center 1s ease-in-out both;
-  }
-  @-webkit-keyframes rotate-center {
-    0% {
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes rotate-center {
-    0% {
-      -webkit-transform: rotate(0);
-      transform: rotate(0);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-  
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
-*/
+
 /* Bouton Commander */
 .commander {
   display: -webkit-box;

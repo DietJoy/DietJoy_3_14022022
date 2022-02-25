@@ -266,7 +266,8 @@ h5 {
   -webkit-background-clip: text;
   color: transparent;
   font-size: 23px;
-  transform: rotate(360deg); 
+  transform: rotate(360deg) ease-in-out;
+  transition-duration: .5s; 
   } 
 
 

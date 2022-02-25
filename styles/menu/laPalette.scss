@@ -233,50 +233,31 @@ h5 {
 
 
 /*Animation Check*/
-.check {
-  display: flex;
+@mixin check{
+  display: block;
   justify-content: center;
   align-items: center;
   background-color: $tertiaire;
-  margin-right: 0px;
   width: 50px;
   height: 50px;
-  /*margin-right: -70px;*/
   border-radius: 0 15px 15px 0;
   padding: 10px;
-  /*position: absolute;*/
   right: 0px;
-  & :hover {
-    padding-right: 70px;
-    .slide-left {
-      -webkit-animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-      animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-      @-webkit-keyframes slide-left {
-        0% {
-          -webkit-transform: translateX(0);
-          transform: translateX(0);
-        }
-        100% {
-          -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
-        }
-      }
-      @keyframes slide-left {
-        0% {
-          -webkit-transform: translateX(0);
-          transform: translateX(0);
-        }
-        100% {
-          -webkit-transform: translateX(-100px);
-          transform: translateX(-100px);
-        }
-      }
-    }
-    
-    
-  }
+  animation: slideright 1s ease-in-out 0s 1 normal both; 
 }
 
+@keyframes slideright {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 100% 100%;
+  }
+
+  100% {
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+  }
+}
+/*
 .iconeCheck {
   background: red;
   background-clip: text;
@@ -310,6 +291,7 @@ h5 {
   }
   
 }
+*/
 
 
 /* Bouton Commander */       

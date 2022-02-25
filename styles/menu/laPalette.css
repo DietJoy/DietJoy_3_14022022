@@ -345,6 +345,7 @@ h5 {
           justify-content: flex-end;
   padding-bottom: 3%;
   padding-right: 5%;
+  overflow: hidden;
 }
 
 /* Fermeture epd */
@@ -364,14 +365,14 @@ h5 {
   height: 50px;
   border-radius: 0 15px 15px 0;
   padding: 10px;
-  right: 18px;
+  right: 0px;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: right;
           transform-origin: right;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
-  position: absolute;
+  overflow: hidden;
 }
 
 .iconeCheck {

@@ -1,0 +1,389 @@
+@media all and (min-width:768px) {
+
+    $policeTitre: "Shrikhand", cursive;
+    $policeTexte: "Roboto", sans-serif;
+    $primary: #9356dc;
+    $secondary: #ff79da;
+    $tertiaire: #99e2d0;
+    $padding-tb: 10px;
+    $padding-tbp: 30px;
+    $padding-lr: 20%;
+    $padding-plr: 5%;
+    $fondgris: #f6f6f6;
+    
+
+body{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    /*Header*/
+    .conteneurHeader {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      
+      .arrow{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        font-size: 22px;
+        position: absolute;
+        margin-right: 50%;
+        
+      }
+      
+      .conteneurLogo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .logo {
+      width: 140px;
+      height: 30px;
+    }
+    
+    a{
+      color: inherit;
+    }
+    
+    /*Menu*/
+    @mixin choix  {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: white;
+      box-shadow: 2px 2px 10px darken($fondgris, 16%);
+      width: 92%;
+      height: 70px;
+      border-radius: 15px;
+      margin-bottom: 5%;
+      padding-left: $padding-plr;
+      
+    }
+    
+    .conteneurPhotoMenu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 200px;
+      padding-top: $padding-tb;
+    }
+    
+    .menu{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .titreMenu{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 30px;
+      font-family: $policeTitre;
+      font-size: xx-large;
+      padding-left: $padding-plr;
+      padding-top: $padding-tbp;
+      padding-bottom: $padding-tbp;
+      background-color: $fondgris;
+      border-radius: 30px 30px 0px 0px;
+      
+      .heart {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 27px;
+        padding-right: 10%;
+      }
+      
+      .fa-regular.fa-heart:hover{
+        font-weight: 900;
+        cursor: grab;
+      }
+      
+      .heart:hover{
+        /*animation: heart 900ms ease-in-out 0ms 1 normal both;*/
+        transition: all ease-in-out 900ms;
+        background: linear-gradient(to bottom right, $secondary, $primary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        cursor: grab;
+      }
+    }
+    
+    h5 {
+      font-size: large;
+      margin: 0%;
+      padding: 0%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    
+    .epd {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $fondgris;
+    padding-left: 0%;
+      padding-bottom: $padding-tb;
+      
+      
+      .titreEpd {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+        font-size: large;
+        font-family: $policeTexte;
+        margin-top: 1%;
+        margin-bottom: 7%;
+        border-bottom: solid 3px $tertiaire;
+        width: 90px;
+        padding-bottom: 5px;
+      }
+      
+      @mixin choix {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+        box-shadow: 2px 2px 10px darken($fondgris, 16%);
+        width: 70%;
+        height: 70px;
+        border-radius: 15px;
+        margin-bottom: 5%;
+        padding-left: $padding-plr;
+        
+      }
+    
+      /* Animation Menu */
+      .choix1 {
+        @include choix;
+        animation: apparition reverse 1500ms ease-in-out;
+        
+        @keyframes apparition {
+          from {
+            transform: translateY(-1%);
+            opacity:1;
+          }
+          to {
+            transform: translateY(200%);
+            opacity:0;
+          }
+        }
+        &:hover .check {
+          transform:scaleX(1);
+        }
+      
+      }
+      
+      .choix2 {
+        @include choix;
+        animation: apparition reverse 1500ms ease-in-out;
+        animation-delay: 200ms;
+        @keyframes apparition {
+          from {
+            transform: translateY(-1%);
+            opacity:1;
+          }
+          to {
+            transform: translateY(200%);
+            opacity:0;
+          } 
+        }
+        &:hover .check {
+          transform:scaleX(1);
+        }
+      }
+      
+      .choix3 {
+        @include choix;
+        animation: apparition reverse 1500ms ease-in-out;
+        animation-delay: 400ms;
+        @keyframes apparition {
+          from {
+            transform: translateY(-1%);
+            opacity:1;
+          }
+          to {
+            transform: translateY(200%);
+            opacity:0;
+          } 
+        }
+        &:hover .check {
+          transform:scaleX(1);
+        }
+      }
+      /* Fin  Animation Menu */
+      
+      .contenuChoix {
+        display: inline-block;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        font-family: $policeTexte;
+        font-size: 18px;
+        line-height: 25px;
+        width: 270px;
+        height: 50px;
+        margin-top: 1%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    
+      .prix {
+        display: flex;
+        flex-direction: column;
+        font-family: $policeTexte;
+        font-size: medium;
+        font-weight: bold;
+        justify-content: flex-end;
+        padding-bottom: 3%;
+        padding-right: $padding-plr;
+        overflow: hidden;
+      }
+      
+    } /* Fermeture epd */
+    
+    
+    /*Animation Check*/
+    
+    @mixin check{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $tertiaire;
+      width: 50px;
+      height: 50px;
+      border-radius: 0 15px 15px 0;
+      padding: 10px;
+      right: 0px;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: 300ms ease-in-out;
+      overflow: hidden;
+    }
+    
+    .check {
+      @include check;
+    }
+    
+    .iconeCheck {
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 23px;
+      transform: rotate(360deg) ease-in-out;
+      transition-duration: .5s; 
+      } 
+    
+    
+    /* Bouton Commander */       
+    @mixin hoverBtnEx {
+      background: linear-gradient(to bottom right, #f392d7, #b98cf1); 
+      box-shadow: 3px 3px 3px rgb(138, 132, 132);
+      transition: all 500ms ease-in-out;
+      transform: scale(1.03);
+      cursor: grab;
+    }   
+    
+    .commander {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $fondgris;
+      height: 110px;
+      padding-bottom: 5%;
+      :hover {
+        @include hoverBtnEx;
+        cursor: grab;
+      }
+    }
+    
+    .btnCommander {
+      background: linear-gradient(to bottom right, $secondary, $primary);
+      background-clip: border-box;
+      width: 215px;
+      height: 20px;
+      text-align: center;
+      font-family: $policeTexte;
+      color: white;
+      padding-top: $padding-tb;
+      padding-bottom: $padding-tb;
+      border-radius: 30px;
+      box-shadow: 2px 2px 10px darken($fondgris, 30%);
+      margin-bottom: 7%;
+    }
+    
+    
+    /*Footer*/ 
+  
+a{
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+  }
+  
+  @mixin conteneurFoot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 25px;
+    font-family: $policeTexte;
+    color: white;
+  }
+  
+  .conteneurFooter {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(56, 54, 54);
+    padding-top: $padding-tb;
+    height: 150px;
+    
+    .conteneurTitreFooter {
+      display: flex;
+      flex-direction: row;
+      font-family: $policeTitre;
+      font-size: larger;
+      color: white;
+    }
+    
+    .pdmc {
+      @include conteneurFoot;
+    }
+  
+    .MQF1 {
+        display: flex;
+        flex-direction: row;
+    }
+  
+    .MQF2 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+  
+  }
+  .iconeF {
+    margin-right: 10px;
+  }
+  
+  .iconeFo {
+    margin-right: 8px;
+  }
+
+}

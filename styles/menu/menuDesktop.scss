@@ -154,15 +154,16 @@ body{
       @mixin choix {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         background-color: white;
+        justify-content: space-between;
         box-shadow: 2px 2px 10px darken($fondgris, 16%);
         width: 70%;
         height: 70px;
         border-radius: 15px;
         margin-bottom: 5%;
-        padding-left: $padding-plr;
-        
+        padding-left: 3%;
+        padding-right: 0%;
+        margin-right: -70px;
       }
     
       /* Animation Menu */
@@ -182,8 +183,8 @@ body{
         }
         &:hover .check {
           transform:scaleX(1);
+          margin-right: 0%;
         }
-      
       }
       
       .choix2 {
@@ -202,6 +203,7 @@ body{
         }
         &:hover .check {
           transform:scaleX(1);
+          margin-right: 0%;
         }
       }
       
@@ -221,6 +223,7 @@ body{
         }
         &:hover .check {
           transform:scaleX(1);
+          margin-right: 0%;
         }
       }
       /* Fin  Animation Menu */
@@ -233,9 +236,9 @@ body{
         font-family: $policeTexte;
         font-size: 18px;
         line-height: 25px;
-        width: 270px;
+        width: 80%;
         height: 50px;
-        margin-top: 1%;
+        margin-top: 2%;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -249,7 +252,7 @@ body{
         font-weight: bold;
         justify-content: flex-end;
         padding-bottom: 3%;
-        padding-right: $padding-plr;
+        padding-right: 2%;
         overflow: hidden;
       }
       

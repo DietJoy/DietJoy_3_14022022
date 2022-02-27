@@ -222,6 +222,7 @@ h5 {
 .epd .choix1:hover .check {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+  margin-right: 0%;
 }
 
 .epd .choix2 {
@@ -264,6 +265,7 @@ h5 {
 .epd .choix2:hover .check {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+  margin-right: 0%;
 }
 
 .epd .choix3 {
@@ -306,6 +308,7 @@ h5 {
 .epd .choix3:hover .check {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+  margin-right: 0%;
 }
 
 .epd .contenuChoix {
@@ -373,6 +376,7 @@ h5 {
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
   overflow: hidden;
+  margin-right: -70px;
 }
 
 .iconeCheck {

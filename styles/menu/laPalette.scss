@@ -146,10 +146,9 @@ h5 {
     height: 70px;
     border-radius: 15px;
     margin-bottom: 5%;
-    padding-left: $padding-plr;
-    
+    padding-left: $padding-plr; 
   }
-
+  
   /* Animation Menu */
   .choix1 {
     @include choix;
@@ -167,8 +166,9 @@ h5 {
     }
     &:hover .check {
       transform:scaleX(1);
+      margin-right: 0%;
     }
-  
+    
   }
   
   .choix2 {
@@ -187,6 +187,7 @@ h5 {
     }
     &:hover .check {
       transform:scaleX(1);
+      margin-right: 0%;
     }
   }
   
@@ -206,6 +207,7 @@ h5 {
     }
     &:hover .check {
       transform:scaleX(1);
+      margin-right: 0%;
     }
   }
   /* Fin  Animation Menu */
@@ -225,7 +227,7 @@ h5 {
     text-overflow: ellipsis;
     overflow: hidden;
   }
-
+  
   .prix {
     display: flex;
     flex-direction: column;
@@ -257,6 +259,7 @@ h5 {
   transform-origin: right;
   transition: 300ms ease-in-out;
   overflow: hidden;
+  margin-right: -70px;
 }
 
 .check {
@@ -274,7 +277,7 @@ h5 {
   font-size: 23px;
   transform: rotate(360deg) ease-in-out;
   transition-duration: .5s; 
-  } 
+} 
 
 
 /* Bouton Commander */       

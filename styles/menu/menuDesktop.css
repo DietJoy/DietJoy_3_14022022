@@ -71,6 +71,10 @@
     height: 200px;
     padding-top: 10px;
   }
+  .menuPalette {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -74,6 +74,10 @@ body{
       height: 200px;
       padding-top: $padding-tb;
     }
+
+    .menuPalette {
+      object-fit: cover;
+    }
     
     .menu{
       display: flex;

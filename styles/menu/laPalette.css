@@ -311,6 +311,11 @@ h5 {
   margin-right: 0%;
 }
 
+.epd .choix3 .iconeCheck :active {
+  -webkit-transform: rotate(360deg) ease-in-out;
+          transform: rotate(360deg) ease-in-out;
+}
+
 .epd .contenuChoix {
   display: inline-block;
   -webkit-box-orient: vertical;
@@ -392,10 +397,37 @@ h5 {
   -webkit-background-clip: text;
   color: transparent;
   font-size: 23px;
-  -webkit-transform: rotate(360deg) ease-in-out;
-          transform: rotate(360deg) ease-in-out;
   -webkit-transition-duration: .5s;
           transition-duration: .5s;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.check:hover .iconeCheck {
+  -webkit-animation-name: rotation;
+  animation-name: rotation;
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
 }
 
 /* Bouton Commander */

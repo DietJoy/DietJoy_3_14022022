@@ -209,7 +209,12 @@ h5 {
       transform:scaleX(1);
       margin-right: 0%;
     }
+    .iconeCheck :active {
+      transform: rotate(360deg) ease-in-out;
+    }
   }
+  
+
   /* Fin  Animation Menu */
   
   .contenuChoix {
@@ -275,10 +280,26 @@ h5 {
   -webkit-background-clip: text;
   color: transparent;
   font-size: 23px;
-  transform: rotate(360deg) ease-in-out;
   transition-duration: .5s; 
 } 
 
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.check:hover .iconeCheck {
+  -webkit-animation-name: rotation;
+          animation-name: rotation;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+}
 
 /* Bouton Commander */       
 @mixin hoverBtnEx {

@@ -138,8 +138,7 @@ body{
       justify-content: center;
       align-items: center;
       background-color: $fondgris;
-    padding-left: 0%;
-    padding-right: 6%;
+      padding-left: 0%;
       padding-bottom: $padding-tb;
       
       
@@ -168,7 +167,6 @@ body{
         margin-bottom: 5%;
         padding-left: 3%;
         padding-right: 0%;
-        margin-right: -50px;
       }
     
       /* Animation Menu */
@@ -188,11 +186,11 @@ body{
         }
         &:hover .check {
           transform:scaleX(1);
-          margin-right: 0%;
-          .iconeCheck {
-            animation: rotation rotate(360deg) ease-in-out;
-          }
         }
+        .iconeCheck {
+          animation: rotation rotate(360deg) ease-in-out;
+        }
+        
       }
       
       .choix2 {
@@ -211,7 +209,6 @@ body{
         }
         &:hover .check {
           transform:scaleX(1);
-          margin-right: 0%;
           .iconeCheck {
             animation: rotation rotate(360deg) ease-in-out;
           }
@@ -234,7 +231,6 @@ body{
         }
         &:hover .check {
           transform:scaleX(1);
-          margin-right: 0%;
           .iconeCheck {
             animation: rotation rotate(360deg) ease-in-out;
           }
@@ -285,7 +281,6 @@ body{
       border-radius: 0 15px 15px 0;
       padding: 10px;
       right: 0px;
-      margin-right: -70px;
       transform: scaleX(0);
       transform-origin: right;
       transition: 300ms ease-in-out;

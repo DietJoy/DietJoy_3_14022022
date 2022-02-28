@@ -316,6 +316,8 @@ h1 {
      display: flex;
      flex-direction: row;
      justify-content: space-between;
+     padding-left: 5%;
+     padding-right: 5%;
  } 
   .conteneurTitre {
      justify-content: center;
@@ -392,6 +394,8 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 
@@ -399,6 +403,8 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 /*Coeur, gestion opacity*/
@@ -470,6 +476,7 @@ h4 {
   .conteneurTitre {
     @include conteneurTitre;
     padding-left: 0%;
+    padding-bottom: $padding-tb;
     justify-content: center;
   }
   .conteneurLlal {

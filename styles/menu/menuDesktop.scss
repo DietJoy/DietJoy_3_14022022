@@ -64,14 +64,13 @@ body{
       border-radius: 15px;
       margin-bottom: 5%;
       padding-left: $padding-plr;
-      
     }
     
     .conteneurPhotoMenu {
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 200px;
+      height: 270px;
       padding-top: $padding-tb;
       object-fit: cover;
     }
@@ -140,6 +139,7 @@ body{
       align-items: center;
       background-color: $fondgris;
     padding-left: 0%;
+    padding-right: 6%;
       padding-bottom: $padding-tb;
       
       
@@ -162,13 +162,13 @@ body{
         background-color: white;
         justify-content: space-between;
         box-shadow: 2px 2px 10px darken($fondgris, 16%);
-        width: 70%;
+        width: 55%;
         height: 70px;
         border-radius: 15px;
         margin-bottom: 5%;
         padding-left: 3%;
         padding-right: 0%;
-        margin-right: -70px;
+        margin-right: -50px;
       }
     
       /* Animation Menu */
@@ -189,6 +189,9 @@ body{
         &:hover .check {
           transform:scaleX(1);
           margin-right: 0%;
+          .iconeCheck {
+            animation: rotation rotate(360deg) ease-in-out;
+          }
         }
       }
       
@@ -209,6 +212,9 @@ body{
         &:hover .check {
           transform:scaleX(1);
           margin-right: 0%;
+          .iconeCheck {
+            animation: rotation rotate(360deg) ease-in-out;
+          }
         }
       }
       
@@ -230,7 +236,7 @@ body{
           transform:scaleX(1);
           margin-right: 0%;
           .iconeCheck {
-            transform: rotate(360deg) ease-in-out;
+            animation: rotation rotate(360deg) ease-in-out;
           }
         }
       }
@@ -279,6 +285,7 @@ body{
       border-radius: 0 15px 15px 0;
       padding: 10px;
       right: 0px;
+      margin-right: -70px;
       transform: scaleX(0);
       transform-origin: right;
       transition: 300ms ease-in-out;
@@ -298,8 +305,8 @@ body{
       -webkit-background-clip: text;
       color: transparent;
       font-size: 23px;
-      transform: rotate(360deg) ease-in-out;
-      transition-duration: .5s; 
+      animation: rotation rotate(360deg) ease-in-out;
+      animation-duration: .5s; 
       } 
     
       @keyframes rotation {

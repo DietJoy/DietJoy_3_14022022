@@ -168,6 +168,9 @@ h5 {
       transform:scaleX(1);
       margin-right: 0%;
     }
+    .iconeCheck :active {
+      transform: rotate(360deg) ease-in-out;
+    }
     
   }
   
@@ -188,6 +191,9 @@ h5 {
     &:hover .check {
       transform:scaleX(1);
       margin-right: 0%;
+    }
+    .iconeCheck {
+      transform: rotate(360deg) ease-in-out;
     }
   }
   

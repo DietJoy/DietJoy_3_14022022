@@ -234,13 +234,9 @@
       opacity: 0;
     }
   }
-  .epd .choix1:hover .check {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-  .epd .choix1 .iconeCheck {
-    -webkit-animation: rotation rotate(360deg) ease-in-out;
-            animation: rotation rotate(360deg) ease-in-out;
+  .epd .choix1:hover .check > .iconeCheck {
+    -webkit-transform: scaleX(1) rotate(1turn);
+            transform: scaleX(1) rotate(1turn);
   }
   .epd .choix2 {
     display: -webkit-box;
@@ -278,13 +274,9 @@
       opacity: 0;
     }
   }
-  .epd .choix2:hover .check {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-  .epd .choix2:hover .check .iconeCheck {
-    -webkit-animation: rotation rotate(360deg) ease-in-out;
-            animation: rotation rotate(360deg) ease-in-out;
+  .epd .choix2:hover .check > .iconeCheck {
+    -webkit-transform: scaleX(1) rotate(1turn);
+            transform: scaleX(1) rotate(1turn);
   }
   .epd .choix3 {
     display: -webkit-box;
@@ -322,13 +314,9 @@
       opacity: 0;
     }
   }
-  .epd .choix3:hover .check {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-  .epd .choix3:hover .check .iconeCheck {
-    -webkit-animation: rotation rotate(360deg) ease-in-out;
-            animation: rotation rotate(360deg) ease-in-out;
+  .epd .choix3:hover .check > .iconeCheck {
+    -webkit-transform: scaleX(1) rotate(1turn);
+            transform: scaleX(1) rotate(1turn);
   }
   .epd .contenuChoix {
     display: inline-block;
@@ -409,36 +397,10 @@
     -webkit-background-clip: text;
     color: transparent;
     font-size: 23px;
-    -webkit-animation: rotation rotate(360deg) ease-in-out;
-            animation: rotation rotate(360deg) ease-in-out;
-    -webkit-animation-duration: .5s;
-            animation-duration: .5s;
-  }
-  @-webkit-keyframes rotation {
-    from {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    to {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes rotation {
-    from {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-    }
-    to {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-    }
-  }
-  .check:hover .iconeCheck {
-    -webkit-animation-name: rotation;
-    animation-name: rotation;
-    -webkit-animation-duration: 500ms;
-    animation-duration: 500ms;
+    -webkit-transform: rotate(360deg) ease-in-out;
+            transform: rotate(360deg) ease-in-out;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
   }
   /* Bouton Commander */
   .commander {

@@ -166,10 +166,8 @@
     background-color: #f6f6f6;
     padding-left: 0%;
     padding-bottom: 10px;
-    /* Animation Menu */
-    /* Fin  Animation Menu */
   }
-  .epd .titreEpd {
+  .titreEpd {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -188,7 +186,8 @@
     width: 90px;
     padding-bottom: 5px;
   }
-  .epd .choix1 {
+  /* Animation Menu */
+  .choix1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -208,6 +207,8 @@
     margin-bottom: 5%;
     padding-left: 3%;
     padding-right: 0%;
+    position: relative;
+    overflow: hidden;
     animation: apparition reverse 1500ms ease-in-out;
   }
   @-webkit-keyframes apparition {
@@ -234,11 +235,12 @@
       opacity: 0;
     }
   }
-  .epd .choix1:hover .check > .iconeCheck {
-    -webkit-transform: scaleX(1) rotate(1turn);
-            transform: scaleX(1) rotate(1turn);
+  .choix1:hover .check {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    margin-right: 0%;
   }
-  .epd .choix2 {
+  .choix2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -258,6 +260,8 @@
     margin-bottom: 5%;
     padding-left: 3%;
     padding-right: 0%;
+    position: relative;
+    overflow: hidden;
     animation: apparition reverse 1500ms ease-in-out;
     -webkit-animation-delay: 200ms;
             animation-delay: 200ms;
@@ -274,11 +278,12 @@
       opacity: 0;
     }
   }
-  .epd .choix2:hover .check > .iconeCheck {
-    -webkit-transform: scaleX(1) rotate(1turn);
-            transform: scaleX(1) rotate(1turn);
+  .choix2:hover .check {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    margin-right: 0%;
   }
-  .epd .choix3 {
+  .choix3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -298,6 +303,8 @@
     margin-bottom: 5%;
     padding-left: 3%;
     padding-right: 0%;
+    position: relative;
+    overflow: hidden;
     animation: apparition reverse 1500ms ease-in-out;
     -webkit-animation-delay: 400ms;
             animation-delay: 400ms;
@@ -314,11 +321,13 @@
       opacity: 0;
     }
   }
-  .epd .choix3:hover .check > .iconeCheck {
-    -webkit-transform: scaleX(1) rotate(1turn);
-            transform: scaleX(1) rotate(1turn);
+  .choix3:hover .check {
+    -webkit-transform: scaleX(1) rotate(360deg);
+            transform: scaleX(1) rotate(360deg);
+    margin-right: 0%;
   }
-  .epd .contenuChoix {
+  /* Fin  Animation Menu */
+  .contenuChoix {
     display: inline-block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -333,14 +342,17 @@
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     line-height: 25px;
-    width: 80%;
+    width: 90%;
     height: 50px;
     margin-top: 2%;
+    position: relative;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
   }
-  .epd .prix {
+  .prix {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -357,8 +369,8 @@
     padding-bottom: 3%;
     padding-right: 2%;
     overflow: hidden;
+    white-space: nowrap;
   }
-  /* Fermeture epd */
   /*Animation Check*/
   .check {
     display: -webkit-box;
@@ -376,12 +388,12 @@
     border-radius: 0 15px 15px 0;
     padding: 10px;
     right: 0px;
+    top: 0%;
+    margin-right: -70px;
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
-    -webkit-transform-origin: right;
-            transform-origin: right;
-    -webkit-transition: 300ms ease-in-out;
-    transition: 300ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
     overflow: hidden;
   }
   .iconeCheck {
@@ -397,10 +409,10 @@
     -webkit-background-clip: text;
     color: transparent;
     font-size: 23px;
-    -webkit-transform: rotate(360deg) ease-in-out;
-            transform: rotate(360deg) ease-in-out;
-    -webkit-transition-duration: 500ms;
-            transition-duration: 500ms;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
   }
   /* Bouton Commander */
   .commander {
@@ -463,6 +475,7 @@
     background-color: #383636;
     padding-top: 10px;
     height: 150px;
+    padding-left: 20%;
   }
   .conteneurFooter .conteneurTitreFooter {
     display: -webkit-box;

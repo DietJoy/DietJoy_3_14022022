@@ -140,154 +140,153 @@
     padding-left: 0%;
     padding-bottom: $padding-tb;
   }
+  
+  .titreEpd {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: large;
+    font-family: $policeTexte;
+    margin-top: 1%;
+    margin-bottom: 7%;
+    border-bottom: solid 3px $tertiaire;
+    width: 90px;
+    padding-bottom: 5px;
+  }
+  
+  @mixin choix {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-between;
+    box-shadow: 2px 2px 10px darken($fondgris, 16%);
+    width: 55%;
+    height: 70px;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    padding-left: 3%;
+    padding-right: 0%;
+    position: relative;
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+  }
+  
+  /* Animation Menu */
+  
+  .choix1 {
+    @include choix;
+    animation: apparition reverse 1500ms ease-in-out;
     
-    .titreEpd {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      font-size: large;
-      font-family: $policeTexte;
-      margin-top: 1%;
-      margin-bottom: 7%;
-      border-bottom: solid 3px $tertiaire;
-      width: 90px;
-      padding-bottom: 5px;
-    }
-    
-    @mixin choix {
-      display: flex;
-      flex-direction: row;
-      background-color: white;
-      justify-content: space-between;
-      box-shadow: 2px 2px 10px darken($fondgris, 16%);
-      width: 55%;
-      height: 70px;
-      border-radius: 15px;
-      margin-bottom: 5%;
-      padding-left: 3%;
-      padding-right: 0%;
-      position: relative;
-      overflow: hidden;
-    } 
-    
-    /* Animation Menu */
-    .choix1 {
-      @include choix;
-      animation: apparition reverse 1500ms ease-in-out;
-      
-      @keyframes apparition {
-        from {
-          transform: translateY(-1%);
-          opacity:1;
-        }
-        to {
-          transform: translateY(200%);
-          opacity:0;
-        }
+    @keyframes apparition {
+      from {
+        transform: translateY(-1%);
+        opacity:1;
       }
-      &:hover .check{ 
-        transform: scaleX(1);
-        margin-right: 0%;
-        }
-    }
-    
-    .choix2 {
-      @include choix;
-      animation: apparition reverse 1500ms ease-in-out;
-      animation-delay: 200ms;
-      @keyframes apparition {
-        from {
-          transform: translateY(-1%);
-          opacity:1;
-        }
-        to {
-          transform: translateY(200%);
-          opacity:0;
-        } 
+      to {
+        transform: translateY(200%);
+        opacity:0;
       }
-      &:hover .check{ 
-        transform: scaleX(1);
-        margin-right: 0%;
-        }
     }
-    
-    .choix3 {
-      @include choix;
-      animation: apparition reverse 1500ms ease-in-out;
-      animation-delay: 400ms;
-      @keyframes apparition {
-        from {
-          transform: translateY(-1%);
-          opacity:1;
-        }
-        to {
-          transform: translateY(200%);
-          opacity:0;
-        } 
+    &:hover .check { 
+      padding-right: 80px;
+    }
+  }
+  
+  .choix2 {
+    @include choix;
+    animation: apparition reverse 1500ms ease-in-out;
+    animation-delay: 200ms;
+    @keyframes apparition {
+      from {
+        transform: translateY(-1%);
+        opacity:1;
       }
-      &:hover .check{ 
-        transform: scaleX(1) rotate(360deg);
-        margin-right: 0%;
-        }
-    } 
-
-    /* Fin  Animation Menu */
-    
-    .contenuChoix {
-      display: inline-block;
-      flex-direction: column;
-      justify-content:center;
-      align-items: center;
-      font-family: $policeTexte;
-      font-size: 18px;
-      line-height: 25px;
-      width: 90%;
-      height: 50px;
-      margin-top: 2%;
-      position: relative;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      transition: all 500ms ease-in-out;
+      to {
+        transform: translateY(200%);
+        opacity:0;
+      } 
     }
-    
-    .prix {
-      display: flex;
-      flex-direction: column;
-      font-family: $policeTexte;
-      font-size: medium;
-      font-weight: bold;
-      justify-content: flex-end;
-      padding-bottom: 3%;
-      padding-right: 2%;
-      overflow: hidden;
-      white-space: nowrap;
+    &:hover .check { 
+      padding-right: 80px;
     }
-    
-       /*Animation Check*/
-    
-    @mixin check{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $tertiaire;
-      width: 50px;
-      height: 50px;
-      border-radius: 0 15px 15px 0;
-      padding: 10px;
-      right: 0px;
-      top: 0%;
-      margin-right: -70px ;
-      transform: scaleX(0);
-      transition: all 500ms ease-in-out;
-      overflow: hidden;
+  }
+  
+  .choix3 {
+    @include choix;
+    animation: apparition reverse 1500ms ease-in-out;
+    animation-delay: 400ms;
+    @keyframes apparition {
+      from {
+        transform: translateY(-1%);
+        opacity:1;
+      }
+      to {
+        transform: translateY(200%);
+        opacity:0;
+      } 
     }
+    &:hover .check{ 
+      padding-right: 80px;
+    }
+  }
+  
+  
+  /* Fin  Animation Menu */
+  
+  .contenuChoix {
+    display: inline-block;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    font-family: $policeTexte;
+    font-size: 18px;
+    line-height: 25px;
+    width: 90%;
+    height: 50px;
+    margin-top: 2%;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  .prix {
+    display: flex;
+    flex-direction: column;
+    font-family: $policeTexte;
+    font-size: medium;
+    font-weight: bold;
+    justify-content: flex-end;
+    padding-bottom: 3%;
+    padding-right: 2%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  /*Animation Check*/
+  
+  @mixin check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $tertiaire;
+    width: 50px;
+    height: 50px;
+    border-radius: 0 15px 15px 0;
+    padding: 10px;
+    right: 0px;
+    top: 0%;
+    margin-right: -70px ;
+    transition: all 500ms ease-in-out;
+  }
   
   .check {
     @include check;
-  }
+  } 
   
-  .iconeCheck {
+  /*Animation Icone Check*/
+  
+  .fa-circle-check {
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -295,10 +294,30 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 23px;
-    transform: rotate(360deg);
-    transition: all 500ms ease-in-out;
+    font-size: 21px;
+  } 
+  
+  @keyframes rotation {
+    from { -webkit-transform: rotate(0deg); transform: rotate(0deg);
+    }
+    to { -webkit-transform: rotate(360deg); transform: rotate(360deg); 
     } 
+  }
+  
+  .choix3:hover .fa-circle-check { 
+    -webkit-animation-name: rotation; animation-name: rotation; 
+    -webkit-animation-duration: 600ms; animation-duration: 600ms;
+  }  
+  
+  .choix2:hover .fa-circle-check { 
+    -webkit-animation-name: rotation; animation-name: rotation; 
+    -webkit-animation-duration: 600ms; animation-duration: 600ms;
+  } 
+  
+  .choix1:hover .fa-circle-check { 
+    -webkit-animation-name: rotation; animation-name: rotation; 
+    -webkit-animation-duration: 600ms; animation-duration: 600ms;
+  } 
   
   
   

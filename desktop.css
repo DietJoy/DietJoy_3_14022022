@@ -429,8 +429,8 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 15%;
+    padding-left: 15%;
   }
   .MQR2 {
     display: -webkit-box;
@@ -443,8 +443,8 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 15%;
+    padding-left: 15%;
   }
   /*Coeur, gestion opacity*/
   .heart {
@@ -585,7 +585,7 @@
         -ms-flex-align: center;
             align-items: center;
     position: relative;
-    width: 90%;
+    width: 80%;
     height: 250px;
     border-radius: 20px;
     -webkit-box-shadow: 2px 3px 4px #bdb8b8;

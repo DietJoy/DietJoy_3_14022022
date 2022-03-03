@@ -209,6 +209,8 @@
     padding-right: 0%;
     position: relative;
     overflow: hidden;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
     animation: apparition reverse 1500ms ease-in-out;
   }
   @-webkit-keyframes apparition {
@@ -236,9 +238,7 @@
     }
   }
   .choix1:hover .check {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    margin-right: 0%;
+    padding-right: 80px;
   }
   .choix2 {
     display: -webkit-box;
@@ -262,6 +262,8 @@
     padding-right: 0%;
     position: relative;
     overflow: hidden;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
     animation: apparition reverse 1500ms ease-in-out;
     -webkit-animation-delay: 200ms;
             animation-delay: 200ms;
@@ -279,9 +281,7 @@
     }
   }
   .choix2:hover .check {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    margin-right: 0%;
+    padding-right: 80px;
   }
   .choix3 {
     display: -webkit-box;
@@ -305,6 +305,8 @@
     padding-right: 0%;
     position: relative;
     overflow: hidden;
+    -webkit-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
     animation: apparition reverse 1500ms ease-in-out;
     -webkit-animation-delay: 400ms;
             animation-delay: 400ms;
@@ -322,9 +324,7 @@
     }
   }
   .choix3:hover .check {
-    -webkit-transform: scaleX(1) rotate(360deg);
-            transform: scaleX(1) rotate(360deg);
-    margin-right: 0%;
+    padding-right: 80px;
   }
   /* Fin  Animation Menu */
   .contenuChoix {
@@ -349,8 +349,6 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    -webkit-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
   }
   .prix {
     display: -webkit-box;
@@ -390,13 +388,11 @@
     right: 0px;
     top: 0%;
     margin-right: -70px;
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
     -webkit-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
-    overflow: hidden;
   }
-  .iconeCheck {
+  /*Animation Icone Check*/
+  .fa-circle-check {
     display: inline-block;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -408,11 +404,45 @@
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 23px;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    -webkit-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
+    font-size: 21px;
+  }
+  @-webkit-keyframes rotation {
+    from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotation {
+    from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .choix3:hover .fa-circle-check {
+    -webkit-animation-name: rotation;
+    animation-name: rotation;
+    -webkit-animation-duration: 600ms;
+    animation-duration: 600ms;
+  }
+  .choix2:hover .fa-circle-check {
+    -webkit-animation-name: rotation;
+    animation-name: rotation;
+    -webkit-animation-duration: 600ms;
+    animation-duration: 600ms;
+  }
+  .choix1:hover .fa-circle-check {
+    -webkit-animation-name: rotation;
+    animation-name: rotation;
+    -webkit-animation-duration: 600ms;
+    animation-duration: 600ms;
   }
   /* Bouton Commander */
   .commander {

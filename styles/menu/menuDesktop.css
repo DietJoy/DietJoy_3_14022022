@@ -1,4 +1,5 @@
 @media all and (min-width: 768px) {
+  /* Variables */
   body {
     width: 70%;
     margin-left: auto;
@@ -405,6 +406,7 @@
     -webkit-background-clip: text;
     color: transparent;
     font-size: 21px;
+    margin-left: -5px;
   }
   @-webkit-keyframes rotation {
     from {
@@ -553,6 +555,7 @@
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
+  /* Fermeture conteneur Footer */
   .iconeF {
     margin-right: 10px;
   }
@@ -560,4 +563,6 @@
     margin-right: 8px;
   }
 }
+
+/* Fermeture Media Querries */
 /*# sourceMappingURL=menuDesktop.css.map */

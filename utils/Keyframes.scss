@@ -1,3 +1,39 @@
+/* loader */
+
+@keyframes conteneur {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@-webkit-keyframes conteneur {
+  100% {
+    -webkit-opacity: 0;
+    -webkit-z-index: -1;
+  }
+}
+
+/* spinner */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/*heart*/
 @keyframes heart {
     0% {
       opacity: 0;
@@ -16,7 +52,7 @@
     }
   }
 
-
+/* Encart nouveau*/
   @keyframes nouveau {
     0% {
       opacity: 1;
@@ -33,4 +69,23 @@
     100% {
       opacity: 1;
     }
+  }
+/* Apparition du menu*/
+  @keyframes apparition {
+    from {
+      transform: translateY(-1%);
+      opacity:1;
+    }
+    to {
+      transform: translateY(200%);
+      opacity:0;
+    } 
+  }
+
+  /* rotation icone Check */
+  @keyframes rotation {
+    from { -webkit-transform: rotate(0deg); transform: rotate(0deg);
+    }
+    to { -webkit-transform: rotate(360deg); transform: rotate(360deg); 
+    } 
   }

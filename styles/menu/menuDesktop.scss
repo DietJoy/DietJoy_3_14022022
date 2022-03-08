@@ -1,17 +1,9 @@
 @media all and (min-width:768px) {
-  
-/* Variables */
-  $policeTitre: "Shrikhand", cursive;
-  $policeTexte: "Roboto", sans-serif;
-  $primary: #9356dc;
-  $secondary: #ff79da;
-  $tertiaire: #99e2d0;
-  $padding-tb: 10px;
-  $padding-tbp: 30px;
-  $padding-lr: 20%;
-  $padding-plr: 5%;
-  $fondgris: #f6f6f6;
-  
+
+@import "../../utils/Variables.scss";
+@import "../../utils/Mixins.scss";
+@import "../../utils/Keyframes.scss";
+
   body{
     width: 70%;
     margin-left: auto;
